@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Functions and Numbers</title>
+    </head>
+
+    <body>
+        <h1>Playing with numbers</h1>
+
+        <p>Part one contains finding the minimum of two numbers without using Math.min().</p>
+
+        <script>
+            let numb1 = Number(prompt("Please enter a numbers"));
+            let numb2 = Number(prompt("please enter another number"));
+
+            function min(numb1,  numb2) {
+                if (numb1 < numb2) {
+                    yourNumber = numb1;
+                    return yourNumber;
+                }
+                else if (numb2 < numb1) {
+                    yourNumber = numb2;
+                    return yourNumber;
+                }
+                else {
+                    alert("Please enter a valid number");
+                }
+            }
+            alert(min(numb1, numb2));
+        </script>
+    </body>
+</html>

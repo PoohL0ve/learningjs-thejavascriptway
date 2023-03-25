@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Calculating the area and circumference of a circle">
+
+        <title>The Circle in JavaScript</title>
+    </head>
+
+    <body>
+        <h1>Calculating the area and circumference of a circle in JavaScript</h1>
+
+        <script>
+
+            let diameter = Number(prompt("Enter the diameter of your circle: \nDon't give the unit measures"));
+
+            function circumference(diameter) {
+                let radius = diameter / 2;
+                let distance = 2 * (3.14 * radius);
+                return distance;
+            }
+            
+            function area(diameter) {
+                let half = diameter / 2;
+                let surface = 3.14 * (half ** 2);
+                return surface;
+            }
+
+            console.log(circumference(diameter));
+            console.log(area(diameter));
+        </script>
+    </body>
+</html>

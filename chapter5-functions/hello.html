@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Function in JavaScript</title>
+    </head>
+
+    <body>
+
+        <script>
+
+            let firstName = prompt("What's your first name?");
+            let lastName = prompt("What's your last name?");
+
+            function sayHello(firstName, lastName) {
+                const message = `Hello, ${firstName} ${lastName}`;
+                return message;
+            }
+
+            alert(`${sayHello(firstName, lastName)}`);
+
+            //Square numbers fucntion 1
+            function square1(x) {
+                const doubleNum = x * x;
+                return doubleNum;
+            }
+            
+            // funct 2
+            const square2 = x => x * x ;
+
+            console.log(square1(0)); // Must show 0
+            console.log(square1(2)); // Must show 4
+            console.log(square1(5)); // Must show 25
+
+            console.log(square2(0)); // Must show 0
+            console.log(square2(2)); // Must show 4
+            console.log(square2(5)); // Must show 25   
+        </script>
+    </body>
+</html>
