@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="PoohLove">
+
+        <title>OOP Bank Account in JS</title>
+    </head>
+    <body>
+        <h1>Modeling a Bank Account</h1>
+        <p>Using predefined properties and values.</p>
+        <script>
+            const account = {
+                name: "Alex",
+                balance: 0,
+                credit (balance) {
+                    value += balance;
+                    return value;
+                },
+                describe() {
+                    return `owner: ${this.name}, balance ${this.balance}`;
+                }
+            }
+            //added to account
+            account.balance += 250;
+            //subtracted from account
+            account.balance -= 80;
+            console.log(account.describe());
+        </script>
+    </body>
+</html>

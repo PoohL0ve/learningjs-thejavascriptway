@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="PoohLove">
+
+        <title>RPG Character in JavaScript</title>
+    </head>
+    <body>
+        <h1>Using object-oriented programming to create an RPG character</h1>
+
+        <script>
+            // updated character from the book called thejavascriptway.
+            const aurora = {
+                name: "Aurora",
+                health: 150,
+                strength: 25, //add the estra comma when using a string.
+                //adding a method
+                describe() {
+                    return `${this.name} has ${this.health} health points, ${this.strength} strength and ${this.xp} experience.`;
+                }
+            };
+            //adding xp to the object
+            aurora.xp = 0;
+            //updated properties
+            aurora.health -= 20; // was hit with a sword
+            aurora.health += 10; //equipped a strength necklace
+            aurora.xp += 15; //learned a new skill
+            console.log(aurora.describe());
+        </script>
+    </body>
+</html>
