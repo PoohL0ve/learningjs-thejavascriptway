@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="PoohLove">
+
+        <title>The Musketeers</title>
+    </head>
+    <body>
+        <main>
+            <h1>Project Using Arrays in JavaScript</h1>
+            <p>
+                <ol>
+                    <li>create an array named musketeers containing Athos, Porthos and Aramis</li>
+                    <li>Use a for loop to show each element</li>
+                    <li>Add D'Artagnan to the array</li>
+                    <li>Show each element using the forEach() method</li>
+                    <li>Remove Aramis from the array</li>
+                    <li>Show each element using the for-of loop</li>
+                </ol>
+            </p>
+            <script>
+                //The output will be shown in the console.
+
+                const musketeers = ["Athos", "Porthos", "Aramis"];
+                //using a for loop to show each element in the array
+
+                for (let i = 0; i < musketeers.length; i++) {
+                    console.log(musketeers[i]);
+                }
+                //adding D'Artagnan to the array
+                musketeers.push("D'Artagnan");
+
+                //Using the forEach() method to show each element
+                musketeers.forEach(character => {
+                    console.log(character);
+                });
+                //Remove Aramis using the splice() method
+                musketeers.splice(2, 1);
+                //Using the for-of loop to display the output
+                for (persons of musketeers) {
+                    console.log(persons);
+                }
+            </script>
+        </main>
+    </body>
+</html>
