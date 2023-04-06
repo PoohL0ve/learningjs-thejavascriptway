@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="PoohLove">
+
+        <title>List of words</title>
+    </head>
+    <body>
+        <main>
+            <h1>Use "stop"</h1>
+            <p>Prompt the user for a list of words until, the user types stop.</p>
+            <script>
+               
+                //Using a while loop to create an array
+                let list = [];
+                let user = "";
+                while (user !== "stop") {
+                    user = String(prompt("Enter a word\nIf you enter stop, I will stop popping up"));
+                    list.push(user);
+
+                    console.log(list);
+                }
+                
+            </script>
+        </main>
+    </body>
+</html>
