@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="PoohLove">
+
+        <title>Using Filter Method in JS</title>
+    </head>
+    <body>
+        <main>
+            <h1>Filtering Numbers</h1>
+            <p>The condition can only be met if the callback Function is satistied.</p>
+            <p>Filter all even-index elements from an array.</p>
+            <script>
+                var nums = [1, 10, 5, 33, 198, 0, 5, 8];
+                // create a function that evalutes for even-indexes
+                /* If the index divided by 2 == 0
+                return the index in a new array */
+
+                var myEvenIndices = nums.filter(function(arr, i) {
+                    return i % 2 == 0;
+                });
+
+                console.log(myEvenIndices);
+            </script>
+        </main>
+    </body>
+</html>
