@@ -20,3 +20,22 @@ function countVowels(str) {
 }
 
 console.log(countVowels('aEiOu'));
+
+// A String can be converted to a number:
+// Explicitly: Number(), parseInt, parseFloat,
+// Implicitly: +stringName
+// Values to Strings" .toString, String(), + ""
+// An object can be converted to JSON format using:
+// JSON.stringify({}) and JSON.parse() to object
+// The loose equality == performs type conversions
+
+const personJson = `
+    { 
+        "name": "PW",
+        "age": 39,
+        "isReal": true  
+    }
+`;
+// no comma after the final item
+console.log(JSON.parse(personJson));
+const values = [2, 4, 6];
